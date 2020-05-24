@@ -1,13 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Red+Hat+Display:wght@400;500&family=Roboto&display=swap');
+
+@font-face {
+  font-family: "Segoe MDL2 Assets";
+  font-style: normal;
+  src: url("./Views/HomePage/font/Segoe-MDL2-Assets.eot");
+  src: url("./Views/HomePage/font/Segoe-MDL2-Assets.eot?#iefix") format("embedded-opentype"),
+  url("./Views/HomePage/font/Segoe-MDL2-Assets.woff2") format("woff2"),
+  url("./Views/HomePage/font/Segoe-MDL2-Assets.woff") format("woff"),
+  url("./Views/HomePage/font/segoe-mdl2-assets.ttf") format("truetype"),
+  url("./Views/HomePage/font/Segoe-MDL2-Assets.svg#Segoe MDL2 Assets") format("svg");
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  /* max-width: 1440px; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background: #FFFFFF;
+  border: 1px solid #008737;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #008737;
+  padding: 17px 83px 13px 83px;
+}
+
+.background {
+  width: 100%;
+  top: -20px;
+  z-index: -100;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.box {
+  height: -webkit-fill-available;
+  margin-bottom: 142px;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #F8C301;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15)
+}
+
+.navbar {
+  margin: 0.5rem 9rem 0 9rem;
+  justify-content: space-between;
+}
+
+.navlinks {
+  justify-content: space-between;
+  width: 19.3rem;
+  font-size: 13px;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.05px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.f-50 {
+  width: 50%;
+}
+
+.f-50-s {
+  width: 48%;
+}
+
+.f-50-b {
+  width: 52%;
+}
+
+.f-60 {
+  width: 60%;
+}
+
+.f-40 {
+  width: 40%;
+}
+
+.f-25 {
+  width: 25%;
+}
+
+/* .company-logo {
+  margin-left: 7rem;
+} */
+
+.first-section {
+  color: #fff;
+}
+
+.first-section-text, .first-section-image {
+  justify-content: center;
+}
+
+.first-section .first-section-text-container {
+  align-items: flex-end;
+}
+
+.first-section-text {
+  height: 100%;
+  padding-bottom: 38px;
+}
+
+.first-section-image div {
+  justify-content: flex-start;
+}
+
+.first-section-header {
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 66px;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.first-section-body {
+  font-size: 19px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  align-self: center;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-left-text {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.section-header {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 47.3px;
+  font-weight: 500;
+}
+
+.section2 div {
+  width: 76.1%;
+}
+
+.section2-header {
+  margin: 10px 0;
+}
+
+.section2-body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 28px;
+  font-size: 15px;
+  margin: 12.5px 0;
+}
+
+.secondSectionIcon svg {
+  display: absolute;
+  top: -20px
+}
+
+.section3-first-div {
+  width: 77%;
+}
+
+.section3-header-first {
+  margin: 5px 0;
+  color: #282828;
+}
+
+.section3-header {
+  margin: 5px 0 10px 0;
+  color: #282828;
+}
+
+
+.section3-body {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #282828;
+}
+
+.section3 .section3-body-parent {
+  width: 26.3rem;
+}
+
+.section3 .section3-mini-container {
+  width: 95.5%;
+}
+
+.section4 .section4-body-parent{
+  width: 34rem;
+}
+
+.seventh-section {
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+  color: #008737;
+  font-size: 70px;
+  line-height: 95px;
+  margin: 10px auto;
+}
+
+.seventh-section p {
+  margin-bottom: 0;
+}
+
+.seventh-section-container {
+  margin: 150px auto 0 auto;
+}
+
+.seventh-section-image-container {
+  width: 600px;
+  height: 450px;
+  box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transform: rotate(-3deg);
+  background: #fff;
+}
+
+.eight-section .text {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 47.3px;
+  font-weight: 500;
+}
+
+.eight-section {
+  margin: 8px 143px 0 310px;
+  font-family: 'Segoe UI';
+}
+
+.eight-section .f-60 {
+  justify-content: center;
+}
+
+.eight-section button {
+  margin: 0 auto;
+  font-family: 'Segoe UI';
+  font-size: 20px;
+}
+
+.line {
+  width: 30rem;
+  padding: 1px;
+  background: linear-gradient(90deg, rgba(53,152,77,1) 0%, rgba(248,195,1,1) 100%);
+}
+
+.relative-position {
+  position: relative;
+}
+
+.semi-circle {
+  position: absolute;
+  z-index: -1;
+	width: 300px;
+  height: 600px;
+  background-color: #fff;
+  background-color: #F4F5F6;
+}
+
+.semi-circle-right {
+  right: 0;
+  top: -210px;
+  border-bottom-left-radius: 600px;
+  border-top-left-radius: 600px;
+}
+
+.semi-circle-left {
+  left: 0;
+  top: -245px;
+  border-bottom-right-radius: 600px;
+  border-top-right-radius: 600px;
+}
+
+.semi-circle-left-2 {
+  top:-580px;
+}
+
+.quadrant {
+  position: absolute;
+  z-index: -1;
+	width: 300px;
+  height: 300px;
+  background-color: #fff;
+  background-color: #F4F5F6;
+  top: -245px;
+  right: 40%;
+  border-top-left-radius: 600px;
+}
+
+.spacer {
+  height: 7rem;
+  width: 100%;
+}
+
+.spacer-1 {
+  height: 10rem;
+  width: 100%;
+}
+
+.spacer-2 {
+  height: 8rem;
+  width: 100%;
+}
+
+.spacer-3 {
+  height: 13rem;
+  width: 100%;
+}
+
+.spacer-4 {
+  height: 4rem;
+  width: 100%;
+}
+
+.right-align {
+  align-self: flex-end;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.wide {
+  width: 100%;
+}
+
+.almost-wide {
+  width: 98%;
+}
+
+.ellipsis {
+  position: absolute;
+  right: 0;
+  top: -290px;
+  z-index: -1;
+}
+
+.ellipsis-2 {
+  position: absolute;
+  right: 0;
+  top: -356px;
+  z-index: -1;
+}
+
+.readMore {
+  color: #008737;
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.rectangle {
+  height: 1170px;
+  width: 641px;
+  position: absolute;
+  right: 0;
+  top: 168px;
+  background-color: #F4F5F6;
+  z-index: -1;
+}
+
+.card-section {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-container{
+  margin: 0 100px;
+}
+
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 10px;
+  width: 22%;
+  margin-bottom: 50px;
+}
+.card-body {
+  padding: 15px;
+  font-weight: 400;
+}
+
+.card-read-more {
+  align-items: flex-end;
+}
+
+.card-header {
+  font-size: 20px;
+}
+
+.card-text {
+  color: rgba(0, 0, 0, 0.8);
+  height: 65px;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-read-more a {
+  color: #F8C301;
+}
+
+.card-container-header p {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.card-image-container {
+  justify-content: center;
+}
+
+.card-image {
+  width: 60%;
+}
+
+.grey {
+  background-color: #F5F6F4;
+}
+
+.light-grey {
+  background-color: #F4F5F6;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.footer {
+  background-color: rgba(244, 245, 246, 0.8);
+  display: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 100px 20px 200px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-text-color {
+  color: rgba(0, 135, 55, 0.8);
+}
+
+.footer-social {
+  width: 20%;
+}
+
+.footer-social-links {
+  justify-content: space-between;
+}
+
+.small-text {
+  font-size: 15px;
+}
+
+.big-text {
+  font-size: 20px;
+}
+
+.seventh-section-image {
+/* position: absolute;
+width: 666.76px;
+height: 346.28px;
+left: 380px;
+top: 5234.9px; */
+transform: rotate(3deg);
 }
